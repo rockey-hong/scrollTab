@@ -178,8 +178,6 @@ var scrollBar = (function() {
 
         ele.scrollLeft = ele.scrollLeft + scrollLeft;
 
-        bar.parentNode.style.left = ele.scrollLeft + 'px';
-
         if (left <= 1) {
             bar.style.left = '1px';
         } else if (left >= (ele.clientWidth - bar.clientWidth - 1)){
@@ -196,8 +194,6 @@ var scrollBar = (function() {
         top = Number(bar.style.top.slice(0, this.length-2)) + top;
 
         ele.scrollTop = ele.scrollTop + scrollTop;
-
-        bar.parentNode.style.top = ele.scrollTop + 'px';
 
         if (top <= 1) {
             bar.style.top = '1px';
